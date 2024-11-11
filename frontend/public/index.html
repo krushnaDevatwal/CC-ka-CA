@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#4CAF50" />
+    <meta name="description" content="Web site created using create-react-app" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>Green & White React App</title>
+
+    <!-- Add Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+    <style>
+      /* Reset some default styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* Background styling */
+      body {
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background: linear-gradient(135deg, #e8f5e9, #ffffff);
+        color: #4CAF50;
+        overflow: hidden;
+      }
+
+      /* Main container styling */
+      #root {
+        text-align: center;
+        padding: 30px;
+        background: #ffffff;
+        border-radius: 15px;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        transform: translateY(-20px);
+        animation: slideIn 1s ease forwards, float 3s ease-in-out infinite;
+        opacity: 0;
+      }
+
+      /* Slide-in animation */
+      @keyframes slideIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+
+      /* Floating effect */
+      @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-5px); }
+        100% { transform: translateY(0px); }
+      }
+
+      /* Heading and text styles */
+      h1 {
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: #4CAF50;
+        margin-bottom: 15px;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+      }
+
+      p {
+        font-size: 1rem;
+        color: #666;
+        max-width: 500px;
+        margin: 10px auto 20px;
+        line-height: 1.6;
+      }
+
+      /* Button styling */
+      .green-button {
+        background: #4CAF50;
+        color: #ffffff;
+        padding: 10px 20px;
+        font-size: 1rem;
+        border-radius: 25px;
+        border: none;
+        cursor: pointer;
+        font-weight: 600;
+        transition: background 0.3s ease, transform 0.3s ease;
+      }
+
+      .green-button:hover {
+        background: #388E3C;
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Additional styles for small screens */
+      @media (max-width: 600px) {
+        h1 {
+          font-size: 2rem;
+        }
+
+        p {
+          font-size: 0.9rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+      <h1>Welcome to the Green & White React App!</h1>
+      <p>Get started by building something amazing. This clean and minimal interface is ready for your creativity!</p>
+      <button class="green-button">Start Exploring</button>
+    </div>
+  </body>
+</html>
