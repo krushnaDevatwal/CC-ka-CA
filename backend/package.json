@@ -13,9 +13,8 @@
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
-    "mongoose": "^8.4.3",
+    "mongoose": "^8.8.1",
     "mongose": "^0.0.2-security"
   },
   "description": ""
 }
-
